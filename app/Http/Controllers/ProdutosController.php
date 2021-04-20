@@ -23,7 +23,8 @@ class ProdutosController extends Controller
 
         $data = ModelsProduct::create([
             'name'=> $request['name'],
-            'value'=> $request['value'],
+            'value_purchase'=> $request['value_purchase'],
+            'value_sale'=> $request['value_sale'],
             'description'=> $request['descripition'],
             'numberRegister'=> $request['numberRegister'],
 
@@ -31,6 +32,6 @@ class ProdutosController extends Controller
 
         // dd($data->all());
 
-        return 'criado com sucesso'.$data;
+        return view('products.list', $data);
     }
 }

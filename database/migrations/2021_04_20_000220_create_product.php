@@ -17,7 +17,8 @@ class CreateProduct extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->string('value');
+            $table->string('value_sale');
+            $table->string('value_purchase');
             $table->string('description');
             $table->string('numberRegister');
         });
