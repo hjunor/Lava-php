@@ -13,8 +13,12 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <a href="{{ url('/product/new') }}"> Criar produtos</a>
-                    {{ __('You are logged in!') }}
+
+
+                    <a class="btn btn-primary" href="{{ url('/product/new') }}"> Criar produtos</a>
+                    <a class="btn btn-primary" href="{{ url('/product/list') }}"> Gerir produtos</a>
+
+
                 </div>
             </div>
         </div>
