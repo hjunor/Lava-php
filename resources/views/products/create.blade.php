@@ -1,9 +1,14 @@
 @extends('layouts.app')
 @section('content')
+<style>
+.m-10 {
+    margin: 0 400px 0 400px;
+}
+</style>
 
-<form class="m-5" action="{{ route('create_product') }}" method="POST">
+<form class=" p-5 m-10 " action="{{ route('create_product') }}" method="POST">
     @csrf
-
+    <h1>Cadastar Produto</h1>
     <div class="form-group">
         <label for="exampleInputEmail1">Nome</label>
         <input type="text" name="name" class="form-control" id="name" aria-describedby="name"
@@ -22,7 +27,7 @@
         <input type="text" name="descripition" class="form-control" id="description" placeholder="descrição">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Numero de Registro</label>
+        <label for="exampleInputPassword1">Numero de Registros</label>
         <input type="text" name="numberRegister" class="form-control" id="numberRegister"
             placeholder="Numero de Registro">
     </div>
