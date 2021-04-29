@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $search = request('search');
+
+        if($search){
+           $products = Product::where([
+                ['name', 'like', '%'.$search.'%']
+            ])->get();
+        }else{
+            $products = false;
+        }
+        return view('home', ['products'=>$products, 'search'=> $search]);
     }
 }
