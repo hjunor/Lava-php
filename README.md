@@ -20,9 +20,7 @@
   <a href="#zap-rodando-o-projeto">Rodando o Projeto</a>
 </p>
 
-<h2>
-Hero Link
-</h2>
+
 
 ## 🚀 Descrição da Aplicação
 
