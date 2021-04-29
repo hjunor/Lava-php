@@ -26,7 +26,7 @@ Hero Link
 
 ## 🚀 Descrição da Aplicação
 
-Aplicação Web Desenvolvida como projeto para diciplina de LPIII. Um gerenciador de cadastro de produtos.
+Aplicação Web Desenvolvida como projeto para disciplina de LPIII. Um gerenciador de cadastro de produtos.
 
 ## :rocket: Tecnologias
 
@@ -52,7 +52,7 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 1 - Fazer o clone da aplicaçao:
 
-2 - variaveis de ambiente, no arquivo [.env-example](./.env-example) voce vai copia-lo de depois retirar "-example" no final.
+2 - variaveis de ambiente, no arquivo [.env-example](./.env-example) voce vai copia-lo de depois retirar "-example" no final editar com sua configurações.
 
 ```env
 DB_CONNECTION=mysql  # banco de dados
